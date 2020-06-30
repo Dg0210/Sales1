@@ -3,5 +3,5 @@ from odoo import models, fields
 
 class Customer(models.Model):
     _inherit = "res.partner"
-    cmt = fields.Char("So Chung Minh Thu")
-    _sql_constraints = [('cmt','UNIQUE (cmt)','Course all already exists'), ]
+    id_num = fields.Char("Identity Number")
+    _sql_constraints = [('id_num','UNIQUE (cmt)','This Identity Number was exist!!!'), ]
